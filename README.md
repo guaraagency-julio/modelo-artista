@@ -74,8 +74,8 @@ Acesse http://localhost:5173.
 
 1. Conecte o repositório GitHub \`guaraagency-julio/modelo-artista\` em Workers & Pages > Create > Pages > Import Git repository.
 2. Framework preset: **None**.
-3. Build command: deixe vazio.
-4. Build output directory: **/** ou o diretório raiz conforme a interface de deploy; os arquivos estão diretamente na raiz.
+3. Build command: **`exit 0`** (ou deixe em branco, se a interface aceitar).
+4. Build output directory: **`.`** (raiz do repositório), pois `index.html` e os demais arquivos estão diretamente na raiz.
 5. Faça o deploy e configure o domínio personalizado, se necessário.
 
 **Vercel:** importe o repositório e use preset "Other"; não existe comando de build.
