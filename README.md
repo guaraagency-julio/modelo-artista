@@ -68,6 +68,17 @@ python -m http.server 5173
 
 Acesse http://localhost:5173.
 
+## Publicar com GitHub Pages
+
+O repositório já inclui o workflow `.github/workflows/deploy.yml` e o arquivo `.nojekyll`. Para ativar a hospedagem pela primeira vez:
+
+1. Acesse **Settings → Pages**: https://github.com/guaraagency-julio/modelo-artista/settings/pages
+2. Em **Build and deployment → Source**, selecione **GitHub Actions** (em vez de "Deploy from a branch").
+3. Acesse **Actions → Publicar site no GitHub Pages** e, se necessário, execute **Run workflow** na branch `main` (ou **Re-run all jobs** na execução anterior).
+4. Confira o status de deploy e abra o endereço: **https://guaraagency-julio.github.io/modelo-artista/**.
+
+Mudanças futuras na branch `main` disparam publicações automaticamente. A URL indicada é o endereço padrão esperado, sujeito à ativação e conclusão da implantação.
+
 ## Publicar
 
 **Cloudflare Pages (recomendado para o fluxo da agência):**
