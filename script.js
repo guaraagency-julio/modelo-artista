@@ -307,6 +307,20 @@
     if (!digits) notify("Demonstração: escolha um destinatário no WhatsApp. Configure o número de contratação em config.js.");
   });
 
+  // Instagram oficial opcional; não inventar perfis de artistas demonstrativos.
+  $("[data-config-link='instagram']").forEach(link => {
+    if (typeof config.instagramUrl === "string" && /^https:\/\/(www\.)?instagram\.com\//.test(config.instagramUrl)) {
+      link.href = config.instagramUrl;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+    } else {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+        notify("Modelo demonstrativo: informe o Instagram oficial em config.js.");
+      });
+    }
+  });
+
   // Press kit permite trocar destino local por link oficial da produtora.
   const press = $(".press-layout .button");
   if (press && typeof config.pressKitUrl === "string" && config.pressKitUrl.trim()) {
