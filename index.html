@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#070a11" />
+  <meta name="description" content="Modelo demonstrativo de site para artista musical: agenda, músicas, vídeos, biografia, galeria e contratação de shows. Projeto Guará Agency." />
+  <meta property="og:title" content="Noah Valente — Site demonstrativo de artista" />
+  <meta property="og:description" content="Um palco para sua história. Modelo de site para artistas pela Guará Agency." />
+  <meta property="og:type" content="website" />
+  <title>Noah Valente | Artista — Modelo Guará Agency</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23070a11'/%3E%3Ctext x='50%25' y='53%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial' font-size='39' font-weight='bold' fill='%236da9ff'%3EN%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./config.js" defer></script>
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para conteúdo</a>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  <div class="demo-ribbon"><span class="demo-pulse"></span> SITE DEMONSTRATIVO · PORTFÓLIO GUARÁ AGENCY</div>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner wrap">
+      <a class="brand" href="#inicio" aria-label="Noah Valente — voltar ao início">
+        <span class="brand-symbol">NV<span class="brand-dot">.</span></span>
+        <span class="brand-text">NOAH <strong>VALENTE</strong><small>ARTISTA &amp; CANTOR</small></span>
+      </a>
+      <nav class="nav" id="primary-nav" aria-label="Navegação principal">
+        <a href="#inicio" class="nav-link active">Início</a>
+        <a href="#agenda" class="nav-link">Agenda</a>
+        <a href="#musicas" class="nav-link">Músicas</a>
+        <a href="#videos" class="nav-link">Vídeos</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#galeria" class="nav-link">Galeria</a>
+        <a href="#contato" class="nav-link">Contato</a>
+        <a href="#contato" class="button button-primary header-cta">CONTRATAR SHOW <span aria-hidden="true">↗</span></a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero section-anchor" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-halo" aria-hidden="true"></div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1722841772515-b7e5d65251b6?auto=format&fit=crop&w=1500&q=85" alt="Fotografia ilustrativa de cantor se apresentando sob iluminação azul" width="1200" height="1500" fetchpriority="high" />
+      </div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <div class="wrap hero-content">
+        <div class="hero-eyebrow"><span class="eyebrow-line"></span> AO VIVO. INTENSO. INESQUECÍVEL.</div>
+        <p class="hero-kicker">O SHOW COMEÇA AQUI</p>
+        <h1 id="hero-title"><span>NOAH</span><span class="outline-heading">VALENTE<span class="hero-period">.</span></span></h1>
+        <p class="hero-description">A trilha sonora dos seus melhores momentos. Uma experiência feita para cantar junto, sentir de perto e levar na memória.</p>
+        <div class="hero-actions">
+          <a href="#contato" class="button button-primary button-large">CONTRATAR SHOW <span aria-hidden="true">↗</span></a>
+          <a href="#musicas" class="button button-ghost button-large"><span class="play-circle" aria-hidden="true">▶</span> CONHEÇA O SOM</a>
+        </div>
+      </div>
+      <div class="hero-side-note">FORRÓ <span>•</span> PISEIRO <span>•</span> SERTANEJO</div>
+      <div class="hero-bottom wrap">
+        <span>DESÇA PARA EXPLORAR <span class="scroll-arrow" aria-hidden="true">↓</span></span>
+        <a href="#agenda">PRÓXIMOS SHOWS <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>MÚSICA AO VIVO ✦ ENERGIA DE VERDADE ✦ DO PALCO PARA VOCÊ ✦ MÚSICA AO VIVO ✦ ENERGIA DE VERDADE ✦ DO PALCO PARA VOCÊ ✦ </span>
+        <span>MÚSICA AO VIVO ✦ ENERGIA DE VERDADE ✦ DO PALCO PARA VOCÊ ✦ MÚSICA AO VIVO ✦ ENERGIA DE VERDADE ✦ DO PALCO PARA VOCÊ ✦ </span>
+      </div>
+    </div>
+
+    <section id="agenda" class="section section-anchor agenda-section">
+      <div class="wrap">
+        <div class="section-intro">
+          <div><p class="eyebrow"><span class="eyebrow-line"></span> O PRÓXIMO ENCONTRO TEM DATA</p><h2 class="section-title">AGENDA DE <em>SHOWS.</em></h2></div>
+          <p class="section-intro-copy">Acompanhe os próximos encontros. Se a sua cidade ainda não está na lista, a gente pode mudar isso.</p>
+        </div>
+        <div class="agenda-layout">
+          <div class="calendar-card" aria-label="Calendário de apresentações">
+            <div class="calendar-top">
+              <div><span class="small-label">EXPLORE AS DATAS</span><h3 id="month-title" aria-live="polite">Novembro 2026</h3></div>
+              <div class="calendar-controls"><button class="icon-button" id="calendar-prev" type="button" aria-label="Mês anterior">←</button><button class="icon-button" id="calendar-next" type="button" aria-label="Próximo mês">→</button></div>
+            </div>
+            <div class="weekday-grid" aria-hidden="true"><span>DOM</span><span>SEG</span><span>TER</span><span>QUA</span><span>QUI</span><span>SEX</span><span>SÁB</span></div>
+            <div class="calendar-grid" id="calendar-grid" role="group" aria-label="Dias do mês"></div>
+            <div class="calendar-legend"><span class="legend-dot"></span> DATA COM SHOW <span class="legend-today"></span> DIA ATUAL</div>
+          </div>
+          <aside class="agenda-side">
+            <div class="agenda-side-top"><span class="small-label">NO RADAR</span><span class="agenda-asterisk">✳</span></div>
+            <h3>O PRÓXIMO<br /><span>ENCONTRO.</span></h3>
+            <div id="selected-show" class="selected-show" aria-live="polite"><p>Selecione um dia marcado no calendário para ver os detalhes.</p></div>
+            <a href="#contato" class="text-link">QUER O SHOW NA SUA CIDADE? <span aria-hidden="true">↗</span></a>
+            <span class="demo-note">Datas e eventos ilustrativos para demonstração do modelo.</span>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="musicas" class="section section-anchor music-section">
+      <div class="music-glow" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="section-intro"><div><p class="eyebrow"><span class="eyebrow-line"></span> AUMENTE O VOLUME</p><h2 class="section-title">NA SUA <em>PLAYLIST.</em></h2></div><p class="section-intro-copy">Aperte o play no clima do show. A trilha começa bem antes de a gente subir no palco.</p></div>
+        <div class="music-layout">
+          <div class="album-art" role="img" aria-label="Capa demonstrativa do projeto musical Noite Adentro">
+            <div class="album-art-text"><span>NOAH VALENTE</span><strong>NOITE<br />ADENTRO<span>.</span></strong><small>O SOM QUE NOS MOVE</small></div>
+            <div class="album-art-circle"></div><div class="album-art-grain"></div>
+          </div>
+          <div class="album-detail">
+            <div class="album-topline"><span class="pill">LANÇAMENTO DEMONSTRATIVO</span><span class="small-label">2026 · EP</span></div>
+            <h3>NOITE<br /><em>ADENTRO.</em></h3>
+            <p>Um repertório imaginado para noites longas, gente perto e memórias que merecem virar música.</p>
+            <div class="tracklist" role="list">
+              <div class="track" role="listitem"><span class="track-number">01</span><span>O Que a Noite Guardou</span><span class="track-time">03:24</span><span class="track-arrow">↗</span></div>
+              <div class="track" role="listitem"><span class="track-number">02</span><span>Até o Sol Nascer</span><span class="track-time">02:58</span><span class="track-arrow">↗</span></div>
+              <div class="track" role="listitem"><span class="track-number">03</span><span>Outra Vez</span><span class="track-time">03:11</span><span class="track-arrow">↗</span></div>
+            </div>
+            <div class="album-bottom"><a class="button button-primary music-stream-link" href="#musicas" data-config-link="spotify" target="_blank" rel="noopener noreferrer">OUVIR NO SPOTIFY <span aria-hidden="true">↗</span></a><span class="stream-footnote">Configure o Spotify do artista em config.js</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="videos" class="section section-anchor video-section">
+      <div class="wrap">
+        <div class="section-intro"><div><p class="eyebrow"><span class="eyebrow-line"></span> NO YOUTUBE</p><h2 class="section-title">DÁ O <em>PLAY.</em></h2></div><p class="section-intro-copy">Um pouco da energia, do som e do que acontece quando as luzes se acendem.</p></div>
+        <div class="video-frame" id="video-frame">
+          <img src="https://images.unsplash.com/photo-1615040828700-db6eb9616c6f?auto=format&fit=crop&w=1800&q=85" alt="Show com feixes de luz azul e público" loading="lazy" width="1800" height="1000" />
+          <span class="video-frame-label">REGISTROS NO PALCO / VÍDEO DEMONSTRATIVO</span>
+          <button class="video-play" type="button" id="video-play" aria-label="Reproduzir vídeo do artista"><span aria-hidden="true">▶</span></button>
+          <span class="video-frame-bottom">A EXPERIÊNCIA AO VIVO <span aria-hidden="true">↗</span></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section section-anchor about-section">
+      <div class="about-visual"><img src="https://images.unsplash.com/photo-1653821355703-abbdc0b819bf?auto=format&fit=crop&w=1200&q=85" alt="Fotografia ilustrativa de apresentação musical" loading="lazy" width="1100" height="1400" /><div class="about-visual-label">MÚSICA QUE APROXIMA.</div></div>
+      <div class="about-copy"><div class="about-copy-inner"><p class="eyebrow"><span class="eyebrow-line"></span> UMA HISTÓRIA QUE NÃO PARA</p><div class="about-mark">✳</div><h2>FEITO DE<br /><em>HISTÓRIAS.</em><br />VIVIDO NO<br />PALCO.</h2><p>O nome Noah Valente dá vida a este projeto demonstrativo de artista musical. A proposta reúne presença de palco, repertório popular e uma identidade visual capaz de levar a experiência do show para o ambiente digital.</p><p>O modelo foi desenvolvido para músicos que precisam apresentar sua trajetória, divulgar datas, reunir conteúdos audiovisuais e transformar visitas em pedidos de contratação.</p><a href="#contato" class="text-link">LEVE ESSA EXPERIÊNCIA AO SEU EVENTO <span aria-hidden="true">↗</span></a></div></div>
+    </section>
+
+    <section id="galeria" class="section section-anchor gallery-section">
+      <div class="wrap">
+        <div class="section-intro"><div><p class="eyebrow"><span class="eyebrow-line"></span> REGISTROS DE PERTO</p><h2 class="section-title">NOS <em>PALCOS.</em></h2></div><p class="section-intro-copy">O clima que só quem está lá entende. Imagens ilustrativas para apresentação do modelo.</p></div>
+        <div class="gallery-grid" id="gallery-grid">
+          <button class="gallery-item gallery-wide" type="button" data-index="0" aria-label="Ampliar foto 1"><img src="https://images.unsplash.com/photo-1722841772515-b7e5d65251b6?auto=format&fit=crop&w=1100&q=85" alt="Cantor durante apresentação com iluminação azul" loading="lazy" /><span class="gallery-view">VER FOTO ↗</span></button>
+          <button class="gallery-item" type="button" data-index="1" aria-label="Ampliar foto 2"><img src="https://images.unsplash.com/photo-1615040828700-db6eb9616c6f?auto=format&fit=crop&w=950&q=85" alt="Feixes de luz durante show ao vivo" loading="lazy" /><span class="gallery-view">VER FOTO ↗</span></button>
+          <button class="gallery-item" type="button" data-index="2" aria-label="Ampliar foto 3"><img src="https://images.unsplash.com/photo-1659928005804-0ec9c656918f?auto=format&fit=crop&w=950&q=85" alt="Público acompanhando apresentação com luzes azuis" loading="lazy" /><span class="gallery-view">VER FOTO ↗</span></button>
+          <button class="gallery-item" type="button" data-index="3" aria-label="Ampliar foto 4"><img src="https://images.unsplash.com/photo-1653821355703-abbdc0b819bf?auto=format&fit=crop&w=950&q=85" alt="Cantor com microfone em palco iluminado" loading="lazy" /><span class="gallery-view">VER FOTO ↗</span></button>
+          <button class="gallery-item gallery-wide" type="button" data-index="4" aria-label="Ampliar foto 5"><img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1100&q=85" alt="Plateia em um festival de música" loading="lazy" /><span class="gallery-view">VER FOTO ↗</span></button>
+          <button class="gallery-item" type="button" data-index="5" aria-label="Ampliar foto 6"><img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=950&q=85" alt="Músicos em apresentação ao vivo" loading="lazy" /><span class="gallery-view">VER FOTO ↗</span></button>
+        </div>
+        <p class="gallery-caption">FOTOGRAFIAS ILUSTRATIVAS — IMAGENS UNSPLASH <span>01 — 06</span></p>
+      </div>
+    </section>
+
+    <section id="contato" class="section section-anchor contact-section">
+      <div class="wrap contact-layout">
+        <div class="contact-lead">
+          <p class="eyebrow"><span class="eyebrow-line"></span> VAMOS CONVERSAR SOBRE O SEU EVENTO</p>
+          <h2>FAÇA<br />ACONTECER<span>.</span></h2>
+          <p>Casamentos, festas privadas, eventos corporativos, festivais e grandes celebrações. Conte um pouco do seu evento e dê o primeiro passo para ter música ao vivo.</p>
+          <div class="contact-stamp"><span>PRONTO PARA O PRÓXIMO PALCO</span><strong>↗</strong></div>
+        </div>
+        <div class="contact-card">
+          <div class="form-header"><span>CONTRATAÇÃO</span><span>01 / 01</span></div>
+          <h3>Solicitar <em>orçamento.</em></h3>
+          <p class="form-subtitle">Preencha as informações. A mensagem fica pronta para envio pelo WhatsApp.</p>
+          <form id="booking-form">
+            <div class="field"><label for="booking-name">NOME DO RESPONSÁVEL <span>*</span></label><input type="text" id="booking-name" name="name" autocomplete="name" placeholder="Seu nome" maxlength="90" required /></div>
+            <div class="field"><label for="booking-city">CIDADE E ESTADO DO EVENTO <span>*</span></label><input type="text" id="booking-city" name="city" placeholder="Ex.: Porto Alegre, RS" maxlength="110" required /></div>
+            <div class="form-row">
+              <div class="field"><label for="booking-date">DATA PREVISTA <span>*</span></label><input type="date" id="booking-date" name="date" required /></div>
+              <div class="field"><label for="booking-type">TIPO DE EVENTO <span>*</span></label><select id="booking-type" name="type" required><option value="" selected disabled>Selecione o tipo</option><option>Casamento</option><option>Festa de 15 anos</option><option>Formatura</option><option>Festival / show público</option><option>Evento corporativo</option><option>Festa privada</option><option>Outro</option></select></div>
+            </div>
+            <div class="field"><label for="booking-message">MENSAGEM ADICIONAL <span class="optional">(OPCIONAL)</span></label><textarea id="booking-message" name="message" rows="3" placeholder="Conte mais sobre o evento..." maxlength="600"></textarea></div>
+            <button class="button button-primary form-submit" type="submit">CONTINUAR NO WHATSAPP <span aria-hidden="true">↗</span></button>
+            <p class="form-privacy">* Campos obrigatórios. Os dados são usados apenas para preparar a mensagem, sem armazenamento neste site.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="press-section section-anchor" id="imprensa">
+      <div class="wrap press-layout"><div><p class="eyebrow"><span class="eyebrow-line"></span> PARA PRODUTORES E IMPRENSA</p><h2>MATERIAL DE <em>DIVULGAÇÃO.</em></h2><p>Apresentação, informações do artista e referências visuais reunidas em um press kit demonstrativo.</p></div><a href="./press-kit.html" class="button button-outline-light">ACESSAR PRESS KIT <span aria-hidden="true">↗</span></a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap">
+    <div class="footer-main"><a href="#inicio" class="footer-wordmark">NOAH<br /><span>VALENTE.</span></a><div class="footer-right"><span>PALCO. MÚSICA. ENCONTRO.</span><nav aria-label="Navegação do rodapé"><a href="#inicio">Início</a><a href="#agenda">Agenda</a><a href="#musicas">Músicas</a><a href="#videos">Vídeos</a><a href="#sobre">Sobre</a><a href="#galeria">Galeria</a><a href="#contato">Contato</a></nav></div></div>
+    <div class="footer-bottom"><span>© <span id="year">2026</span> Noah Valente. Personagem e informações demonstrativos.</span><span>MODELO DESENVOLVIDO PARA O PORTFÓLIO DA <a href="https://guaraagency.com.br/" target="_blank" rel="noopener noreferrer">GUARÁ AGENCY ↗</a></span></div>
+  </div></footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Visualização da galeria">
+    <button class="lightbox-close icon-button" type="button" id="lightbox-close" aria-label="Fechar foto">×</button>
+    <button class="lightbox-arrow lightbox-prev" type="button" id="lightbox-prev" aria-label="Foto anterior">←</button>
+    <figure><img id="lightbox-image" src="" alt="" /><figcaption id="lightbox-caption">1 / 6</figcaption></figure>
+    <button class="lightbox-arrow lightbox-next" type="button" id="lightbox-next" aria-label="Próxima foto">→</button>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
