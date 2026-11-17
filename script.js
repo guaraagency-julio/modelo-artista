@@ -303,12 +303,15 @@
     lines.push("", "Enviado pelo site do artista.");
     const digits = String(config.whatsappNumber || "").replace(/\D/g, "");
     const url = "https://wa.me/" + (digits || "") + "?text=" + encodeURIComponent(lines.join("\n"));
+    if (config.demo || !digits) {
+      notify("Solicitação simulada. Nenhum dado foi enviado.");
+      return;
+    }
     window.open(url, "_blank", "noopener,noreferrer");
-    if (!digits) notify("Demonstração: escolha um destinatário no WhatsApp. Configure o número de contratação em config.js.");
   });
 
   // Instagram oficial opcional; não inventar perfis de artistas demonstrativos.
-  $("[data-config-link='instagram']").forEach(link => {
+   $$("[data-config-link='instagram']").forEach(link => {
     if (typeof config.instagramUrl === "string" && /^https:\/\/(www\.)?instagram\.com\//.test(config.instagramUrl)) {
       link.href = config.instagramUrl;
       link.target = "_blank";
